@@ -1,0 +1,22 @@
+<p>cars works!</p>
+
+<label>company:</label>
+<input type="radio" name="company" value="MG"[(ngModel)]="company">
+<label>MG</label>
+<br>
+
+<input type="radio" name="company" value="BMW" [(ngModel)]="company">
+<label>BMW</label>
+<br>
+
+<input type="radio" name="company" value="FORTUNER" [(ngModel)]="company">
+<label>FORTUNER</label>
+<br>
+
+<h1>{{ company }}</h1>
+
+<img *ngIf="company=='MG'" src="/assets/mg.jpg" width="25%" height="25%">
+<br><br>
+<img *ngIf="company=='BMW'" src="/assets/bmw.jpg" width="25%" height="25%">
+<br><br>
+<img *ngIf="company=='FORTUNER'" src="/assets/fortuner.jpg" width="25%" height="25%">

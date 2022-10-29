@@ -1,0 +1,24 @@
+<p>create-account works!</p>
+<form [formGroup]="accountForm">
+
+<label>CreateAt</label>
+<input type="text" formControlName="createdAt">
+<br>
+<label>ACCOUNT NAME:</label>
+<input type="text" formControlName="account_name">
+<br>
+<label>AVAILABLE BALANCE:</label>
+<input type="text" formControlName="available_balance">
+<br>
+<label>CURRENCY:</label>
+<input type="text" formControlName="currency">
+<br>
+<label>IMAGE:</label>
+<input type="text" formControlName="user_image">
+<br>
+<label>ACCOUNT NUMBER:</label>
+<input type="text" formControlName="account_number">
+<br>
+
+<button (click)="submit()">SUBMIT</button>
+</form>

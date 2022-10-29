@@ -1,0 +1,34 @@
+<p>mail works!</p>
+<!-- 
+<table border="table table-dark">
+    <thead>
+          <tr>
+            <th>UserId</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Completed</th>
+          </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let mail of mails">
+            <td>{{mail.userId}}</td>
+            <td>{{mail.id}}</td>
+            <td>{{mail.title}}</td>
+            <td>{{mail.completed}}</td>
+        </tr>
+        
+    </tbody>
+</table> -->
+<html>
+    <head>
+    <style>
+        
+        </style>
+        </head>
+        <body>
+<div *ngFor="let mail of mails" class="mail" [ngStyle]="{'font-weight':mail.completed==true ? 100 : 900}">
+    <p>{{mail.title}}</p>
+
+</div>
+</body>
+</html>

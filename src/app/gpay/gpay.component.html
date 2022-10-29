@@ -1,0 +1,14 @@
+<p>gpay works!</p>
+
+<h1>GPAY</h1>
+
+<label>Amount:</label>
+<input type="number" [(ngModel)]="amount">
+<br>
+
+<button (click)="withdraw()" class="btn btn-danger">WITHDRAW</button>
+<button (click)="deposit()" class="btn btn-success">DEPOSIT</button>
+
+<br><br>
+
+<button (click)="balance()">Show Balance</button>
