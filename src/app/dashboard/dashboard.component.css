@@ -12,6 +12,7 @@
      }
      .left > h6{
         cursor: pointer;
+        font-size: 70%;
      }
      .left > h6:hover{
           background-color: silver;
